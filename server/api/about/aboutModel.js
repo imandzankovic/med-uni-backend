@@ -5,7 +5,6 @@ var AboutSchema = new Schema({
     name: {
         type: String
     },
-
     title: {
         type: String
     },
@@ -14,7 +13,6 @@ var AboutSchema = new Schema({
     },
     img: {
         type: String,
-
     }
 });
 

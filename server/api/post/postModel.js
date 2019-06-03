@@ -5,7 +5,6 @@ var PostSchema = new Schema({
   title: {
     type: String,
     required: true,
-    // unique: true
   },
 
   text: {
@@ -18,7 +17,6 @@ var PostSchema = new Schema({
   },
   text2: {
     type: String,
-    //required: true
   },
   title3: {
     type: String,
@@ -26,7 +24,6 @@ var PostSchema = new Schema({
   },
   text3: {
     type: String,
-    //required: true
   },
   sumUp: {
     type: String
@@ -37,13 +34,13 @@ var PostSchema = new Schema({
   video: {
     type: String
   },
-  timestamp: { 
+  timestamp: {
     type: Number,
-     default: Date.now },
+    default: Date.now
+  },
 
   author: { type: Schema.Types.ObjectId, ref: 'author' },
 
-  //author: {type: Schema.Types.ObjectId, ref: 'user'},
   categories: [{ type: Schema.Types.ObjectId, ref: 'category' }]
 });
 
