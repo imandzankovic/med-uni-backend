@@ -11,12 +11,14 @@ require('./server/middleware/appMiddleware')(app);
 app.use('/api', api);
 app.listen(3000)
 
-mongoose.connect('mongodb+srv://imandz:iman@meduni-vneye.mongodb.net/medUni?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb://imand:iman.123@ds211168.mlab.com:11168/heroku_v65lvc52', { useNewUrlParser: true }, (err) => {
     if (!err)
         console.log('Connected to Mongo - MedUni');
         else {
             console.log(err)
         }
 })
+
+
 
 
