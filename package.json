@@ -15,7 +15,7 @@
     "express": "4.17.1",
     "formidable": "^1.2.1",
     "googleapis": "^39.2.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.21",
     "mongoose": "5.5.11",
     "morgan": "1.9.1",
     "nodemon": "1.19.1"
